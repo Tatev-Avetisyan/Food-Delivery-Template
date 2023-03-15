@@ -1,0 +1,25 @@
+@mixin food-wagon-text {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 31.1102px;
+  line-height: 120%;
+  letter-spacing: -0.025em;
+}
+
+.food-wagon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  width: 197px;
+  height: 36.77px;
+  .food {
+    @include food-wagon-text;
+    color: #f17228;
+  }
+  .wagon {
+    @include food-wagon-text;
+    color: #ffb30e;
+  }
+}

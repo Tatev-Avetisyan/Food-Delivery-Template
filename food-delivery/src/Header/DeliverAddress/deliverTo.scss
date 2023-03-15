@@ -1,0 +1,31 @@
+@import '../../styles/variables/colors.module';
+
+
+@mixin deliver-text {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-size: 18px;
+  color:$textColor;
+  line-height: 100%;
+  text-align: center;
+}
+
+.deliver-to {
+  display: flex;
+  align-items: center;
+  padding: 0px;
+  // width: 565px;
+  height: 25px;
+  flex: none;
+  gap:12px;
+  order: 1;
+  flex-grow: 0;
+  .dark{
+    @include deliver-text;
+    font-weight: 700;
+  }
+  .light{
+    @include deliver-text;
+    font-weight: 400;
+  }
+}

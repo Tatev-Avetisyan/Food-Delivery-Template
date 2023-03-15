@@ -1,0 +1,43 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    color: $black;
+    font-size: 10px;
+    font-weight: 400;
+    min-height: -webkit-fill-available;
+    background-attachment: fixed;
+  }
+
+input {
+  font-size: 100% !important;
+  box-shadow: none;
+  -o-box-shadow: none;
+  -ms-box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+
+  &[type="text"],
+  &[type="number"],
+  &[type="tel"],
+  &[type="phone"],
+  &[type="password"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus,
+  &:-webkit-autofill:active {
+    box-shadow: 0 0 0 30px $white inset !important;
+    background-color: transparent !important;
+  }
+
+  &[type='number']::-webkit-outer-spin-button,
+  &[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+}
