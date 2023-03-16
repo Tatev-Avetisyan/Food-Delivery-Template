@@ -1,0 +1,17 @@
+@import "./colors.module";
+
+@mixin food-wagon-text($color:$orangeNavbarColor) {
+  font-weight: 700;
+  font-size: 3.1rem;
+  line-height: 120%;
+  letter-spacing: -0.025em;
+  color:$color
+}
+
+@mixin deliver-text($font-weight: 400) {
+  font-size: 18px;
+  color: $textColor;
+  line-height: 100%;
+  text-align: center;
+  font-weight: $font-weight;
+}
