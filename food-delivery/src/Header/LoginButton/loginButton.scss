@@ -6,7 +6,7 @@
   align-items: center;
   padding: 14px 24px;
   gap: 10px;
-//   width: 118px;
+  width: 118px;
   height: 46px;
   border: none;
   background: $headerBGColor;
@@ -14,8 +14,6 @@
   border-radius: 8px;
 }
 .login-text {
-  font-family: "Source Sans Pro";
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 100%;
@@ -24,5 +22,4 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-
 }
