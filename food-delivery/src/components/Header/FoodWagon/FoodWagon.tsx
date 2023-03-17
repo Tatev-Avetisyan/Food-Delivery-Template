@@ -1,4 +1,4 @@
-import foodWagon from "../../assets/png/foodWagon.png"
+import foodWagon from "../../../assets/png/foodWagon.png"
 import "./foodWagon.scss";
 
 

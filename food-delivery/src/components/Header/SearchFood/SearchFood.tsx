@@ -1,4 +1,4 @@
-import search from "../../assets/png/search.png";
+import search from "../../../assets/png/search.png";
 import "./searchFood.scss";
 
 const SearchFood = () => {

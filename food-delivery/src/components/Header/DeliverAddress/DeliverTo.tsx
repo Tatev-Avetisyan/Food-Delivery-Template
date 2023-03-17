@@ -1,4 +1,4 @@
-import map from "../../assets/png/map.png";
+import map from "../../../assets/png/map.png";
 import "./deliverTo.scss";
 
 const DeliverTo = () => {

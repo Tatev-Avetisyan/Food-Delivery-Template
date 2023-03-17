@@ -1,4 +1,4 @@
-import user from "../../assets/png/user.png";
+import user from "../../../assets/png/user.png";
 import "./loginButton.scss";
 
 const LoginButton = () => {
