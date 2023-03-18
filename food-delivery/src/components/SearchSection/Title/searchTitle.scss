@@ -1,0 +1,27 @@
+@import "../../../styles/variables/colors.module";
+
+.search-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+  position: absolute;
+  border: 3px solid black;
+  width: 100%;
+  height: 18vh;
+  .title {
+    width: 100%;
+    font-weight: 700;
+   
+    font-size: 7rem;
+    white-space: nowrap;
+    line-height: 100%;
+    color: $headerBGColor;
+  }
+  .info {
+    font-size: 1.8rem;
+    line-height: 0%;
+    color: #504f4f;
+  }
+}
