@@ -1,16 +1,16 @@
-@import '../../styles/variables/colors.module';
-@import '../../styles/variables/mixins';
+@import "../../../styles/variables/colors.module";
+@import "../../../styles/variables/mixins";
 
 .deliver-to {
   display: flex;
   align-items: center;
   padding: 0px;
-  // width: 565px;
+  gap: 0.7rem;
   height: 25px;
-  .dark{
+  .dark {
     @include deliver-text(700);
   }
-  .light{
+  .light {
     @include deliver-text;
   }
 }

@@ -1,11 +1,12 @@
-@import "../../styles/variables/mixins";
-@import "../../styles//variables/colors.module";
+@import "../../../styles/variables/mixins";
+@import "../../../styles//variables/colors.module";
 
 .food-wagon {
   margin-left: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
   padding: 0px;
   width: 197px;
   height: 36.77px;
@@ -14,5 +15,8 @@
   }
   .wagon {
     @include food-wagon-text($yellowNavbarColor);
+  }
+  .text {
+    display: flex;
   }
 }
