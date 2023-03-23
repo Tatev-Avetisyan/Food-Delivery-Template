@@ -1,11 +1,11 @@
 @import "./colors.module";
 
-@mixin food-wagon-text($color:$orangeNavbarColor) {
+@mixin food-wagon-text($color: $orangeNavbarColor, $font-size: 3.1rem) {
   font-weight: 700;
-  font-size: 3.1rem;
+  font-size: $font-size;
   line-height: 120%;
   letter-spacing: -0.025em;
-  color:$color
+  color: $color;
 }
 
 @mixin deliver-text($font-weight: 400) {
