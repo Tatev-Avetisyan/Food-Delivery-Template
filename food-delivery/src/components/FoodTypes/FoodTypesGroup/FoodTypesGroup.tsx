@@ -4,7 +4,8 @@ import firstImage from "../../../assets/png/firstImage.png";
 import secondImage from "../../../assets/png/secondImage.png";
 import thirdImage from "../../../assets/png/thirdImage.png";
 import forthImage from "../../../assets/png/forthImage.png";
-import { FoodItemType } from "../../../foodItemType/foodItemTypes";
+import { FoodItemType } from "../../../types/foodItemType/foodItemTypes";
+
 
 
 const foodTypeItems: FoodItemType[] = [
