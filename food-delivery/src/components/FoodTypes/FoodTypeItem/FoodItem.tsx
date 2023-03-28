@@ -1,7 +1,8 @@
 import "./foodItem.scss";
 import React from "react";
 import Discount from "./Discount/Discount";
-import { FoodItemType } from "../../../foodItemType/foodItemTypes";
+import { FoodItemType } from "../../../types/foodItemType/foodItemTypes";
+
 
 const FoodItem: React.FC<FoodItemType> = (props) => {
   const { img, foodName, remainingTime, discount } = props;

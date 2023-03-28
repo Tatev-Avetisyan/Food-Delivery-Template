@@ -5,3 +5,10 @@
     discount:number;
 
 }
+export interface FoodOrderType{
+    image:string;
+    name:string;
+    location:string;
+    price:string;
+
+}

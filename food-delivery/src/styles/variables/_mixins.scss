@@ -15,3 +15,23 @@
   text-align: center;
   font-weight: $font-weight;
 }
+
+@mixin title($color: $titleBlackColor, $text-align: center) {
+  font-weight: 700;
+  font-size: 43px;
+  line-height: 112%;
+  text-align: $text-align;
+  color: $color;
+}
+
+@mixin text-title($color: $textDarkGreyColor, $text-align: center,$position:static,$margin-top:10px) {
+  position: $position;
+  margin-top: $margin-top;
+  width: 307px;
+  height: 26px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 120%;
+  text-align: $text-align;
+  color: $color;
+}

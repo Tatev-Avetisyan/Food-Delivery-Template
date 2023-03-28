@@ -1,0 +1,22 @@
+@import "../../../styles/variables/mixins";
+.how-does-it-work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0;
+  position: static;
+  margin-top: 26%;
+  gap: 32px;
+  width: 100%;
+  // height: 425px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(255, 206, 103, 0.22) -42.47%,
+    rgba(253, 237, 202, 0) 100%
+  );
+  .title {
+    @include title($color: #f17228);
+  }
+}
