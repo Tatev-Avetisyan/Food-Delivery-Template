@@ -1,0 +1,18 @@
+.popular-item-section {
+  width: 75%;
+  height: 51vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  margin-top: 4%;
+  gap: 16px;
+  .paginationBtn {
+    position: absolute;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    gap: 103%;
+    left: 2%;
+    top: 35%;
+  }
+}

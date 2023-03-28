@@ -3,6 +3,7 @@ import MainHeader from "../Header/MainHeader/MainHeader";
 import MainSection from "../SearchSection/MainSection/MainSection";
 import MainFoodComponent from "../FoodTypes/MainFoodTypesComponent/MainFoodComponent";
 import HowDoesItWorkMainPage from "../HowDoesItWork/HowDoesItWorkMainPage/HowDoesItWorkMainPage";
+import PopularItemsMain from "../PopularItems/PopularItemMain/PopularItemsMain";
 
 const MainPage = () => {
   return (
@@ -11,6 +12,7 @@ const MainPage = () => {
       <MainSection />
       <MainFoodComponent />
       <HowDoesItWorkMainPage />
+      <PopularItemsMain />
     </div>
   );
 };

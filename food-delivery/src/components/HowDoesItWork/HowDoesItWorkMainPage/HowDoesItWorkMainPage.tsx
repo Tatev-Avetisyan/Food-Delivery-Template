@@ -4,8 +4,8 @@ import "./howDoesItWork.scss";
 const HowDoesItWorkMainPage = () => {
   return (
     <div className="how-does-it-work">
-      <div className="text"> How does it work</div>
-      <HowDoesItWorkSection/>
+      <p className="title"> How does it work</p>
+      <HowDoesItWorkSection />
     </div>
   );
 };

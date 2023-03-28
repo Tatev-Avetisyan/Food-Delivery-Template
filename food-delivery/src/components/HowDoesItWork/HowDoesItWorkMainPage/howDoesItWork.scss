@@ -1,9 +1,10 @@
+@import "../../../styles/variables/mixins";
 .how-does-it-work {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3% 0;
+  padding: 5% 0;
   position: static;
   margin-top: 26%;
   gap: 32px;
@@ -15,13 +16,7 @@
     rgba(255, 206, 103, 0.22) -42.47%,
     rgba(253, 237, 202, 0) 100%
   );
-  .text {
-    width: 330px;
-    height: 48px;
-    font-weight: 700;
-    font-size: 43px;
-    line-height: 112%;
-    text-align: center;
-    color: #f17228;
+  .title {
+    @include title($color: #f17228);
   }
 }
