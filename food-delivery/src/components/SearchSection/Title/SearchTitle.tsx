@@ -1,10 +1,10 @@
-import "./searchTitle.scss";
+import styles from "./searchTitle.module.scss";
 
 const SearchTitle = () => {
   return (
-    <div className="search-title">
-      <p className="title">Are you starving?</p>
-      <p className="info">
+    <div className={styles.searchTitle}>
+      <p className={styles.title}>Are you starving?</p>
+      <p className={styles.info}>
         Within a few clicks, find meals that are accessible near you{" "}
       </p>
     </div>

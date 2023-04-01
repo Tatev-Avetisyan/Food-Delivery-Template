@@ -1,9 +1,9 @@
 import Search from "../../../assets/svg/Search.svg";
-import "./searchFood.scss";
+import styles from  "./searchFood.module.scss";
 
 const SearchFood = () => {
   return (
-    <div className="search">
+    <div className={styles.search}>
       <img src={Search} alt="search" />
       <p>Search Food</p>
     </div>

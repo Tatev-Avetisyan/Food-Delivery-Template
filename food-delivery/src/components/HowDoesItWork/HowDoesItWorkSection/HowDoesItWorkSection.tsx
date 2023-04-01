@@ -1,9 +1,9 @@
-import "./howDoesItWorkSection.scss";
-import SectionItem from "./SectionItem/SectionItem";
+import styles from "./howDoesItWorkSection.module.scss";
 import Donut from "../../../assets/svg/Donut.svg";
 import Invoice from "../../../assets/svg/Invoice.svg";
 import Map from "../../../assets/svg/Icon.svg";
 import Menu from "../../../assets/svg/Menu.svg";
+import { SectionItem } from "components";
 
 const dummySectionItems = [
   {
@@ -31,7 +31,7 @@ const dummySectionItems = [
 
 const HowDoesItWorkSection = () => {
   return (
-    <div className="section">
+    <div className={styles.section}>
       {dummySectionItems.map((item, index) => {
         return (
           <SectionItem

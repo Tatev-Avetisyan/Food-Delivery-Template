@@ -1,11 +1,11 @@
 import User from "../../../assets/svg/User.svg";
-import "./loginButton.scss";
+import styles from "./loginButton.module.scss";
 
 const LoginButton = () => {
   return (
-    <button className="login-button">
+    <button className={styles.loginButton}>
       <img src={User} alt="deliverAddress" />
-      <p className="login-text">Login</p>
+      <p className={styles.loginText}>Login</p>
     </button>
   );
 };

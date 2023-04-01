@@ -1,18 +1,23 @@
-import "./mainPage.scss";
-import MainHeader from "../Header/MainHeader/MainHeader";
-import MainSection from "../SearchSection/MainSection/MainSection";
-import MainFoodComponent from "../FoodTypes/MainFoodTypesComponent/MainFoodComponent";
-import HowDoesItWorkMainPage from "../HowDoesItWork/HowDoesItWorkMainPage/HowDoesItWorkMainPage";
+import {
+  FeaturedRestaurantsMain,
+  HowDoesItWorkMainPage,
+  MainFoodComponent,
+  MainHeader,
+  MainSection,
+} from "components";
+import styles from "./mainPage.module.scss";
+
 import PopularItemsMain from "../PopularItems/PopularItemMain/PopularItemsMain";
 
 const MainPage = () => {
   return (
-    <div className="main-page">
+    <div className={styles.mainPage}>
       <MainHeader />
       <MainSection />
       <MainFoodComponent />
       <HowDoesItWorkMainPage />
       <PopularItemsMain />
+      <FeaturedRestaurantsMain />
     </div>
   );
 };

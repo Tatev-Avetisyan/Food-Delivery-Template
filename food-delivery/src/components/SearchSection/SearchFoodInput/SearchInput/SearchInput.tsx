@@ -1,11 +1,11 @@
-import "./searchInput.scss";
+import styles from  "./searchInput.module.scss";
 import SearchWhiteIcon from "../../../../assets/svg/SearchWhiteIcon.svg";
 
 <img src={SearchWhiteIcon} alt="deliveryIcon" />;
 
 const SearchInput = () => {
   return (
-    <div className="search-input">
+    <div className={styles.searchInput}>
       <input  placeholder="Enter Your Address" type="text" className="input" src={SearchWhiteIcon} />
 
       <button>

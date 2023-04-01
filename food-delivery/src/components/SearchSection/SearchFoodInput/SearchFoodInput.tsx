@@ -1,14 +1,12 @@
-import "./searchFoodInput.scss";
-import SearchInput from "./SearchInput/SearchInput";
-import OrderFoodImage from "../FoodImage/OrderFoodImage";
-import DeliveryPickup from "./DeliveryPickup/DeliveryPickup";
+import styles from "./searchFoodInput.module.scss";
+import { DeliveryPickup, OrderFoodImage, SearchInput } from "components";
 
 const SearchFoodInput = () => {
   return (
     <>
-      <div className="order-card">
+      <div className={styles.orderCard}>
         <DeliveryPickup />
-        <hr className="hr" />
+        <hr className={styles.hr} />
         <SearchInput />
       </div>
       <OrderFoodImage />

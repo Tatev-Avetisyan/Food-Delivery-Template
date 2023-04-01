@@ -1,13 +1,14 @@
 import MapYellowIcon from "../../../assets/svg/MapYellowIcon.svg";
-import "./deliverTo.scss";
+import styles from "./deliverTo.module.scss";
 
 const DeliverTo = () => {
   return (
-    <div className="deliver-to">
-      <p className="dark">Deliver To:</p>
+    <div className={styles.deliverTo}>
+      <p className={styles.dark}>Deliver To:</p>
       <img src={MapYellowIcon} alt="deliverAddress" />
-      <p className="light">Current Location</p>
-      <p className="dark">Mohammadpur Bus Stand,Dhaka</p>
+      <p className={styles.light}>Current Location</p>
+      <p className={styles.dark}>Mohammadpur Bus Stand,</p>
+      <p className={styles.dark}> Dhaka</p>
     </div>
   );
 };

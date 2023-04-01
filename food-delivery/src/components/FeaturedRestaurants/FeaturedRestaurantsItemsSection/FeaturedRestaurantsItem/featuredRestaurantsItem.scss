@@ -1,0 +1,17 @@
+.featured-restaurants-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  width: 24%;
+  height: 55vh;
+  border-radius: 16px;
+  border: 2px solid green;
+  margin-top: 2%;
+  .image-featured-restaurants {
+    width: 100%;
+    border-radius: 16px;
+  }
+}

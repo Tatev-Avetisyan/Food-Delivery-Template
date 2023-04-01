@@ -1,0 +1,14 @@
+.discount-and-fast {
+  display: flex;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  border: 2px solid rgb(162, 255, 0);
+  z-index: 1000000000;
+
+  position: absolute;
+  width: 243px;
+  height: 42px;
+  left: 24px;
+  top: 24px;
+}

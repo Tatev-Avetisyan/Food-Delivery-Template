@@ -1,12 +1,11 @@
-import "./foodTypesGroup.scss"
-import FoodItem from "../FoodTypeItem/FoodItem";
+import styles from "./foodTypesGroup.module.scss";
+
 import firstImage from "../../../assets/png/firstImage.png";
 import secondImage from "../../../assets/png/secondImage.png";
 import thirdImage from "../../../assets/png/thirdImage.png";
 import forthImage from "../../../assets/png/forthImage.png";
 import { FoodItemType } from "../../../types/foodItemType/foodItemTypes";
-
-
+import { FoodItem } from "components";
 
 const foodTypeItems: FoodItemType[] = [
   {
@@ -37,7 +36,7 @@ const foodTypeItems: FoodItemType[] = [
 
 const FoodTypesGroup = () => {
   return (
-    <div className="foodGroup">
+    <div className={styles.foodGroup}>
       {foodTypeItems.map((item, index) => {
         return (
           <FoodItem

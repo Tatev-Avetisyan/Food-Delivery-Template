@@ -1,13 +1,13 @@
 import LogoFoodWagon from "../../../assets/svg/LogoFoodWagon.svg";
-import "./foodWagon.scss";
+import styles from "./foodWagon.module.scss";
 
 const FoodWagon = () => {
   return (
-    <div className="food-wagon">
+    <div className={styles.foodWagon}>
       <img src={LogoFoodWagon} alt="logo" />
-      <div className="text">
-        <p className="food">food</p>
-        <p className="wagon">wagon</p>
+      <div className={styles.text}>
+        <p className={styles.food}>food</p>
+        <p className={styles.wagon}>wagon</p>
       </div>
     </div>
   );

@@ -1,17 +1,17 @@
-import "./deliveryPickup.scss";
+import styles from "./deliveryPickup.module.scss";
 import DeliveryIcon from "../../../../assets/svg/DeliveryIcon.svg";
 import PickupIcon from "../../../../assets/svg/PickupIcon.svg";
 
 const DeliveryPickup = () => {
   return (
-    <div className="delivery-pickup">
-      <button className="delivery-button">
+    <div className={styles.deliveryPickup}>
+      <button className={styles.deliveryButton}>
         <img src={DeliveryIcon} alt="deliveryIcon" />
-        <p className="delivery-text">Delivery</p>
+        <p className={styles.deliveryText}>Delivery</p>
       </button>
-      <button className="pickup-button">
+      <button className={styles.pickupButton}>
         <img src={PickupIcon} alt="deliveryIcon" />
-        <p className="pickup-text">Pickup</p>
+        <p className={styles.pickupText}>Pickup</p>
       </button>
     </div>
   );
