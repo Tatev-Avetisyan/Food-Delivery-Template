@@ -1,11 +1,11 @@
-import "./featuredRestaurantsItem.scss";
+import styles from "./featuredRestaurantsItem.module.scss";
 import FoodWorld from "../../../../assets/png/FoodWorld.png";
-import DiscountAndFast from "./DiscountAndFast/DiscountAndFast";
+import { DiscountAndFast } from "components";
 
 const FeaturedRestaurantsItem = () => {
   return (
-    <div className="featured-restaurants-item">
-      <img className="image-featured-restaurants" src={FoodWorld} />
+    <div className={styles.item}>
+      <img className={styles.image} src={FoodWorld} alt="food" />
       <DiscountAndFast />
     </div>
   );

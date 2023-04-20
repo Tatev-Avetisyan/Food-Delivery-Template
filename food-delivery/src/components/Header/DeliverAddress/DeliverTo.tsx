@@ -6,9 +6,9 @@ const DeliverTo = () => {
     <div className={styles.deliverTo}>
       <p className={styles.dark}>Deliver To:</p>
       <img src={MapYellowIcon} alt="deliverAddress" />
-      <p className={styles.light}>Current Location</p>
-      <p className={styles.dark}>Mohammadpur Bus Stand,</p>
-      <p className={styles.dark}> Dhaka</p>
+      <p className={styles.lightOpenSans}>Current Location</p>
+      <p className={styles.darkOpenSans}>Mohammadpur Bus Stand,</p>
+      <p className={styles.darkOpenSans}> Dhaka</p>
     </div>
   );
 };

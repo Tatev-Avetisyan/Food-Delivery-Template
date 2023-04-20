@@ -1,0 +1,57 @@
+@import "../../../../../styles/variables/colors.module";
+
+.discountAndFast {
+  display: flex;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 5px;
+  border-radius: 6px;
+  position: absolute;
+  width: 68%;
+  height: 4vh;
+  left: 7%;
+  top: 6%;
+  .wrapperDiscount {
+    display: flex;
+    align-items: center;
+    padding: 2% 5%;
+    gap: 5%;
+    width: 55%;
+    background:$orangeNavbarColor;
+    border-radius: 6px;
+    border: none;
+    img {
+      width: 20%;
+    }
+    .text {
+      display: flex;
+      p {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 120%;
+        color: $headerBGColor;
+      }
+    }
+  }
+  .wrapperFast {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2% 5%;
+    gap: 5%;
+    width: 41%;
+    background: $yellowNavbarColor;
+    border-radius: 6px;
+    border: none;
+    img {
+      width: 28%;
+    }
+    .text {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 120%;
+      color: $headerBGColor;
+    }
+  }
+}

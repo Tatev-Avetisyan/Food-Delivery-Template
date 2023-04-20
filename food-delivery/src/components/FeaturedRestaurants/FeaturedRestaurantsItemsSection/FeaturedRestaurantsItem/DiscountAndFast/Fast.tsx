@@ -1,9 +1,13 @@
-import React from 'react'
+import styles from "./discountAndFast.module.scss";
+import Clock from "../../../../../assets/svg/Clock.svg";
 
 const Fast = () => {
   return (
-    <div>Fast</div>
-  )
-}
+    <button className={styles.wrapperFast}>
+      <img src={Clock} />
+      <p className={styles.text}>Fast</p>
+    </button>
+  );
+};
 
-export default Fast
+export default Fast;

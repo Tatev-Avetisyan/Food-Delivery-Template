@@ -29,7 +29,7 @@ export { default as SectionItem } from "../components/HowDoesItWork/HowDoesItWor
 
 //FeaturedRestaurants
 export { default as FeaturedRestaurantsMain } from "../components/FeaturedRestaurants/index";
-
-
-
-export { default as Discount } from "./FeaturedRestaurants/FeaturedRestaurantsItemsSection/FeaturedRestaurantsItem/DiscountAndFast/Discount";
+export { default as DiscountAndFast } from "../components/FeaturedRestaurants/FeaturedRestaurantsItemsSection/FeaturedRestaurantsItem/DiscountAndFast/DiscountAndFast";
+export { default as FeaturedRestaurantsItem } from "../components/FeaturedRestaurants/FeaturedRestaurantsItemsSection/FeaturedRestaurantsItem/FeaturedRestaurantsItem";
+export { default as Discount } from "../components/FeaturedRestaurants/FeaturedRestaurantsItemsSection/FeaturedRestaurantsItem/DiscountAndFast/Discount";
+export { default as FeaturedRestaurantsItemsSection } from "../components/FeaturedRestaurants/FeaturedRestaurantsItemsSection/FeaturedRestaurantsItemsSection";

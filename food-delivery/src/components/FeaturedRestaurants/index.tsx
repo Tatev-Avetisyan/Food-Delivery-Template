@@ -1,5 +1,4 @@
-
-import FeaturedRestaurantsItemsSection from "./FeaturedRestaurantsItemsSection/FeaturedRestaurantsItemsSection";
+import { FeaturedRestaurantsItemsSection } from "components";
 import styles from "./index.module.scss";
 
 const FeaturedRestaurantsMain = () => {

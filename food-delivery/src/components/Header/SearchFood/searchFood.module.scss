@@ -10,6 +10,6 @@
   height: 1.8rem;
   white-space: nowrap;
   & p {
-    @include deliver-text(700);
+    @include deliver-text;
   }
 }

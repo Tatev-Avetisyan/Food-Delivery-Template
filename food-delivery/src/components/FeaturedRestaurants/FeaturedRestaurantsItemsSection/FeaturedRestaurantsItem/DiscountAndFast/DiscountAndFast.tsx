@@ -1,10 +1,14 @@
 import { Discount } from "components";
-import "./discountAndFast.scss";
+import styles from "./discountAndFast.module.scss";
+import Fast from "./Fast";
 
 const DiscountAndFast = () => {
-  return <div className="discount-and-fast">
-    <Discount/>
-    DiscountAndFast</div>;
+  return (
+    <div className={styles.discountAndFast}>
+      <Discount />
+      <Fast />
+    </div>
+  );
 };
 
 export default DiscountAndFast;

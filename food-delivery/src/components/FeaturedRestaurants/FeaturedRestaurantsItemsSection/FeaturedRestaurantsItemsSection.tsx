@@ -1,17 +1,18 @@
-import FeaturedRestaurantsItem from "./FeaturedRestaurantsItem/FeaturedRestaurantsItem";
-import "./featuredRestaurantsItemsSection.scss";
+
+import { FeaturedRestaurantsItem } from "components";
+import styles from "./featuredRestaurantsItemsSection.module.scss";
 
 const FeaturedRestaurantsItemsSection = () => {
   return (
-    <div className="featured-restaurants-section">
-     <FeaturedRestaurantsItem/>
-     <FeaturedRestaurantsItem/>
-     <FeaturedRestaurantsItem/>
-     <FeaturedRestaurantsItem/>
-     <FeaturedRestaurantsItem/>
-     <FeaturedRestaurantsItem/>
-     <FeaturedRestaurantsItem/>
-     <FeaturedRestaurantsItem/>
+    <div className={styles.section}>
+      <FeaturedRestaurantsItem />
+      <FeaturedRestaurantsItem />
+      <FeaturedRestaurantsItem />
+      <FeaturedRestaurantsItem />
+      <FeaturedRestaurantsItem />
+      <FeaturedRestaurantsItem />
+      <FeaturedRestaurantsItem />
+      <FeaturedRestaurantsItem />
     </div>
   );
 };
