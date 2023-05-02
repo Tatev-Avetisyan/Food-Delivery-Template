@@ -35,3 +35,25 @@
   text-align: $text-align;
   color: $color;
 }
+
+
+@mixin button-color($content) {
+  @if $content == "Open Now" {
+    background-color: rgba(121, 185, 60, 0.2);
+    color: #79b93c;
+  } @else if $content == "Opens Tomorrow" {
+    background-color: rgba(241, 114, 40, 0.2);
+    color: #f17228;
+  }
+}
+
+@mixin button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 6px 16px;
+  white-space: nowrap;
+  border-radius: 16px;
+  gap: 10px;
+  height: 35px;
+}

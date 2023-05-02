@@ -1,3 +1,5 @@
+@import "../../../../styles/variables/mixins";
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -6,4 +8,22 @@
   gap: 2.5rem;
   width: 56%;
   height: 14vh;
+}
+.buttonOrange {
+  @include button;
+  @include button-color($content: "Opens Tomorrow");
+  p {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 120%;
+  }
+}
+.buttonGreen {
+  @include button;
+  @include button-color($content: "Open Now");
+  p {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 120%;
+  }
 }

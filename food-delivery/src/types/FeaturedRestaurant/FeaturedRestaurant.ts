@@ -1,7 +1,9 @@
 export interface FeaturedRestaurantType {
-  image: string;
+  image: any;
   discount: number;
-  logo: string;
+  logo: any;
   title: string;
   open: string;
+  stars: number;
+  key: number;
 }

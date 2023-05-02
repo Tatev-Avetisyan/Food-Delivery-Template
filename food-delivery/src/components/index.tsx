@@ -33,3 +33,6 @@ export { default as DiscountAndFast } from "../components/FeaturedRestaurants/Fe
 export { default as FeaturedRestaurantsItem } from "../components/FeaturedRestaurants/FeaturedRestaurantsItemsSection/FeaturedRestaurantsItem/FeaturedRestaurantsItem";
 export { default as Discount } from "../components/FeaturedRestaurants/FeaturedRestaurantsItemsSection/FeaturedRestaurantsItem/DiscountAndFast/Discount";
 export { default as FeaturedRestaurantsItemsSection } from "../components/FeaturedRestaurants/FeaturedRestaurantsItemsSection/FeaturedRestaurantsItemsSection";
+
+//svg-png
+export { default as FoodWorldLogo } from "../assets/svg/FeaturedRestaurantImages/Logos/FoodWorldLogo.svg";
