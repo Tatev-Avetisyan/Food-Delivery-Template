@@ -1,11 +1,10 @@
 @import "../../../../styles/variables/colors.module";
 
-@mixin discountSign($font-wight: 700, $font-size: 3.5rem) {
+@mixin discountSign($font-wight: 700, $font-size: 26px) {
   color: $headerBGColor;
   font-weight: $font-wight;
   font-size: $font-size;
 }
-
 .discount {
   position: absolute;
   display: flex;
@@ -17,27 +16,42 @@
   top: 49.8%;
   background: $yellowNavbarColor;
   border-radius: 0px 32px 0px 16px;
-  .discountAmount {
-    width: 73px;
-    font-weight: 700;
-    font-size: 68px;
-    line-height: 106%;
+  .discountWrapper {
     display: flex;
+    justify-content: center;
     align-items: center;
-    color: $headerBGColor;
-  }
-  .signs {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    width: 31px;
-    height: 58px;
-    .percent {
-      @include discountSign;
+    .discountAmount {
+      width: 70%;
+      height: 5vh;
+      font-weight: 700;
+      line-height: 106%;
+      display: flex;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      color: $headerBGColor;
+      p {
+        font-size: 5.5rem;
+      }
     }
-    .off {
-      @include discountSign(400, 2.2rem);
+    .signs {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      // border: 2px solid black;
+      line-height: 150%;
+      padding-top: 5%;
+      width: 31px;
+      height: 35px;
+      .percent {
+        @include discountSign;
+      }
+      .off {
+        @include discountSign(400, 16px);
+        padding-top: 8%;
+        
+      }
     }
   }
 }
