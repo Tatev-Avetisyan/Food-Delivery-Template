@@ -1,0 +1,15 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
+  border: none;
+  white-space: nowrap;
+  &:hover {
+    cursor: pointer;
+  }
+}

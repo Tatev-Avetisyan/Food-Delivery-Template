@@ -1,7 +1,7 @@
 @import "../../../../styles/variables/colors.module";
 
 @mixin discountSign($font-wight: 700, $font-size: 26px) {
-  color: $headerBGColor;
+  color: $whiteBGColor;
   font-weight: $font-wight;
   font-size: $font-size;
 }
@@ -29,7 +29,7 @@
       justify-content: center;
       display: flex;
       align-items: center;
-      color: $headerBGColor;
+      color: $whiteBGColor;
       p {
         font-size: 5.5rem;
       }
@@ -39,7 +39,6 @@
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
-      // border: 2px solid black;
       line-height: 150%;
       padding-top: 5%;
       width: 31px;

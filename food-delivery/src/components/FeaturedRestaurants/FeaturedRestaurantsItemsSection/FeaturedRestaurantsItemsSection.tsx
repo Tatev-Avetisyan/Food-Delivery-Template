@@ -15,19 +15,19 @@ import RubyLogo from "../../../assets/svg/FeaturedRestaurantImages/Logos/RubyLog
 import KFCLogo from "../../../assets/svg/FeaturedRestaurantImages/Logos/KFCLogo.svg";
 import RedSquareLogo from "../../../assets/svg/FeaturedRestaurantImages/Logos/RedSquareLogo.svg";
 import TacoBellLogo from "../../../assets/svg/FeaturedRestaurantImages/Logos/TacoBellLogo.svg";
+import ArrowRight from "../../../assets/svg/FeaturedRestaurantImages/ArrowRight.svg";
 
 import styles from "./featuredRestaurantsItemsSection.module.scss";
 
 import { FeaturedRestaurantType } from "types/FeaturedRestaurant/FeaturedRestaurant";
 import { FeaturedRestaurantsItem } from "components";
+import Button from "shared/Button/Button";
 
 // import {
 //   DonutsLogo,
 //   FoodWorldLogo,
 //   PizzaLogo,
 // } from "assets/svg/FeaturedRestaurantImages/Logos";
-
-
 
 const dummyDataFeaturedRestaurants: FeaturedRestaurantType[] = [
   {
@@ -55,7 +55,7 @@ const dummyDataFeaturedRestaurants: FeaturedRestaurantType[] = [
     image: DonutsHut,
     discount: 10,
     // logo: <DonutsLogo />,
-    logo:DonutsLogo,
+    logo: DonutsLogo,
     title: "Donuts hut",
     open: "Open Now",
     stars: 20,
@@ -107,22 +107,30 @@ const dummyDataFeaturedRestaurants: FeaturedRestaurantType[] = [
   },
 ];
 
-const FeaturedRestaurantsItemsSection = () => {
+const FeaturedRestaurantsItemsSection: React.FC = () => {
   return (
-    <div className={styles.section}>
-      {dummyDataFeaturedRestaurants.map((item) => {
-        return (
-          <FeaturedRestaurantsItem
-            key={item.key}
-            stars={item.stars}
-            image={item.image}
-            discount={item.discount}
-            logo={item.logo}
-            title={item.title}
-            open={item.open}
-          />
-        );
-      })}
+    <div className={styles.wrapper}>
+      <div className={styles.section}>
+        {dummyDataFeaturedRestaurants.map((item) => {
+          return (
+            <FeaturedRestaurantsItem
+              key={item.key}
+              stars={item.stars}
+              image={item.image}
+              discount={item.discount}
+              logo={item.logo}
+              title={item.title}
+              open={item.open}
+            />
+          );
+        })}
+      </div>
+      <div>
+        <Button extraStyle={styles.featuredRestaurantBtn}>
+          <p>View All</p>
+          <img src={ArrowRight} alt="ArrowRight" />
+        </Button>
+      </div>
     </div>
   );
 };

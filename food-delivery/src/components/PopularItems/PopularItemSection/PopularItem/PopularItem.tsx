@@ -1,21 +1,22 @@
-import "./popularItem.scss";
+import styles from "./popularItem.module.scss";
 import MapYellowIcon from "../../../../assets/svg/MapYellowIcon.svg";
 import { FoodOrderType } from "../../../../types/foodItemType/foodItemTypes";
+import Button from "shared/Button/Button";
 
 const PopularItem: React.FC<FoodOrderType> = (props) => {
   const { image, price, location, name } = props;
 
   return (
-    <div className="item">
-      <img className="image" src={image} alt="foodImage" />
+    <div className={styles.item}>
+      <img className={styles.image} src={image} alt="foodImage" />
 
-      <p className="text-title">{name}</p>
-      <div className="location">
+      <p className={styles.textTitle}>{name}</p>
+      <div className={styles.location}>
         <img src={MapYellowIcon} alt="foodImage" />
         <p>{location}</p>
       </div>
-      <p className="price">${price}</p>
-      <button className="order-button"> Order Now</button>
+      <p className={styles.price}>${price}</p>
+      <Button extraStyle={styles.orderButton}> Order Now</Button>
     </div>
   );
 };

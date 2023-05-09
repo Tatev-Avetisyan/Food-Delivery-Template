@@ -1,4 +1,5 @@
-import Button from "./Button/Button";
+
+import Button from "shared/Button/Button";
 import ImageNameReview from "./ImageNameReview/ImageNameReview";
 import styles from "./ImageReviewButtonWrapper.module.scss";
 
@@ -17,7 +18,9 @@ const ImageReviewButtonWrapper: React.FC<{
           open === "Open Now" ? styles.buttonGreen : styles.buttonOrange
         }
         open={open}
-      />
+      >
+        <p>{open}</p>
+      </Button>
     </div>
   );
 };

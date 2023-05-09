@@ -12,6 +12,9 @@
 .buttonOrange {
   @include button;
   @include button-color($content: "Opens Tomorrow");
+
+  display: flex;
+  align-items: flex-start;
   p {
     font-size: 16px;
     font-weight: 700;
