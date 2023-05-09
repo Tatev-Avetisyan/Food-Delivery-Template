@@ -1,5 +1,5 @@
 import PopularItem from "./PopularItem/PopularItem";
-import "./popularItemSection.scss";
+import styles from "./popularItemSection.module.scss";
 import CheeseBurger from "../../../assets/png/CheeseBurger.png";
 import ToofesCake from "../../../assets/png/ToofesCake.png";
 import DanCake from "../../../assets/png/DanCake.png";
@@ -97,8 +97,8 @@ const PopularItemSection = () => {
   };
 
   return (
-    <div className="popular-item-section">
-      <div className="paginationBtn">
+    <section className={styles.popularItemSection}>
+      <div className={styles.paginationBtn}>
         <div onClick={decrement}>
           <img src={ArrowLeft} alt="left" />
         </div>
@@ -117,7 +117,7 @@ const PopularItemSection = () => {
           />
         );
       })}
-    </div>
+    </section>
   );
 };
 

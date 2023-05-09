@@ -1,10 +1,9 @@
-import styles from  "./foodItem.module.scss";
+import styles from "./foodItem.module.scss";
 import React from "react";
 
 import { FoodItemType } from "../../../types/foodItemType/foodItemTypes";
 import { DiscountFoodItem } from "components";
-
-
+import Button from "shared/Button/Button";
 
 const FoodItem: React.FC<FoodItemType> = (props) => {
   const { img, foodName, remainingTime, discount } = props;
@@ -15,9 +14,9 @@ const FoodItem: React.FC<FoodItemType> = (props) => {
       <DiscountFoodItem discount={discount} />
       <div className={styles.nameRemainingTime}>
         <p className={styles.text}>{foodName}</p>
-        <div className={styles.remainingText}>
+        <Button extraStyle={styles.remainingText}>
           <p>{remainingTime}</p>
-        </div>
+        </Button>
       </div>
     </div>
   );

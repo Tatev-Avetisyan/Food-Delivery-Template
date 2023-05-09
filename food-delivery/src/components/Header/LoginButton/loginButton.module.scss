@@ -1,15 +1,11 @@
 @import "../../../styles/variables/colors.module";
 
 .loginButton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 14px 24px;
   gap: 10px;
   width: 118px;
   height: 46px;
-  border: none;
-  background: $headerBGColor;
+  background: $whiteBGColor;
   box-shadow: $loginButtonShadow;
   border-radius: 8px;
 }
@@ -18,7 +14,7 @@
   font-size: 18px;
   line-height: 100%;
   text-align: center;
-  background: linear-gradient(92.84deg, #ffb800 -47.72%, #ff8a00 136.81%);
+  background: $loginButtonTextBG;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
