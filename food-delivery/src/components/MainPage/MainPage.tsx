@@ -4,6 +4,7 @@ import {
   MainFoodComponent,
   MainHeader,
   MainSection,
+  SearchByFoodSection,
 } from "components";
 import styles from "./mainPage.module.scss";
 
@@ -18,6 +19,7 @@ const MainPage = () => {
       <HowDoesItWorkMainPage />
       <PopularItemsMain />
       <FeaturedRestaurantsMain />
+      <SearchByFoodSection/>
     </div>
   );
 };

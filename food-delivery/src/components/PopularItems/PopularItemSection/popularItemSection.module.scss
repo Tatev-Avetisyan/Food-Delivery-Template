@@ -1,5 +1,5 @@
 .popularItemSection {
-  width: 75%;
+  width: 80%;
   height: 51vh;
   display: flex;
   justify-content: space-between;
@@ -8,11 +8,13 @@
   gap: 16px;
   .paginationBtn {
     position: absolute;
-    width: 75%;
+    width: 94%;
     display: flex;
     justify-content: space-between;
-    gap: 103%;
-    left: 2%;
-    top: 35%;
+    left: 3%;
+    top: 37%;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }

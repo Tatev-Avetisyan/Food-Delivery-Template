@@ -10,8 +10,10 @@ const FoodItem: React.FC<FoodItemType> = (props) => {
 
   return (
     <div className={styles.foodItem}>
-      <img className={styles.img} src={img} alt="food" />
-      <DiscountFoodItem discount={discount} />
+      <div className={styles.imageDiscount}>
+        <img className={styles.img} src={img} alt="food" />
+        <DiscountFoodItem discount={discount} />
+      </div>
       <div className={styles.nameRemainingTime}>
         <p className={styles.text}>{foodName}</p>
         <Button extraStyle={styles.remainingText}>
