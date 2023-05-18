@@ -20,13 +20,14 @@
     gap: 10px;
     margin-top: 20rem;
     white-space: nowrap;
-
     width: 90%;
     height: 45px;
     background: $featuredRestaurantBackground;
     box-shadow: $featuredRestaurantButtonShadow;
     border-radius: 14px;
-
     color: $whiteBGColor;
+    p {
+      font-size: 1.7rem;
+    }
   }
 }

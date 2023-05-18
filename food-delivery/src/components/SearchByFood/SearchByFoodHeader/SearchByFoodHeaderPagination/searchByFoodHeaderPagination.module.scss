@@ -6,7 +6,6 @@
   align-items: center;
   padding: 0px 18px 0px 0px;
   gap: 26.5px;
-  border: 2px solid green;
   width: 295.5px;
   height: 76px;
   .btn {
@@ -15,7 +14,6 @@
     background-color: none;
     align-items: center;
     gap: 10px;
-    border: 1px solid red;
     background: $milkWhiteBGColor;
     color: #ffb30e;
     .context {
@@ -33,6 +31,6 @@
     padding: 0px;
     gap: 5%;
     width: 168px;
-    height: 76px;  
+    height: 76px;
   }
 }
