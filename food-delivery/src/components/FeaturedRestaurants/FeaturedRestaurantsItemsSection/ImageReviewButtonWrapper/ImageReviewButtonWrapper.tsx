@@ -1,4 +1,3 @@
-
 import Button from "shared/Button/Button";
 import ImageNameReview from "./ImageNameReview/ImageNameReview";
 import styles from "./ImageReviewButtonWrapper.module.scss";

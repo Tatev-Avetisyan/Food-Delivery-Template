@@ -1,16 +1,21 @@
 @import "../../../styles/variables/colors.module";
 
 .foodItem {
+  display: flex;
+  flex-direction: column;
   width: 22%;
-  height: 44vh;
+  height: 45vh;
   padding: 1px;
-
-  .img {
-    width: 100%;
-    height: 30vh;
+  gap: 6%;
+  .imageDiscount {
     position: relative;
-    background: $whiteBGColor;
-    border-radius: 16px;
+    height: 30vh;
+    .img {
+      width: 100%;
+      height: 30vh;
+      background: $whiteBGColor;
+      border-radius: 16px;
+    }
   }
   .nameRemainingTime {
     display: flex;

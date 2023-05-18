@@ -36,3 +36,17 @@ export { default as FeaturedRestaurantsItemsSection } from "../components/Featur
 
 //svg-png
 export { default as FoodWorldLogo } from "../assets/svg/FeaturedRestaurantImages/Logos/FoodWorldLogo.svg";
+
+//SearchByFoodSection
+export { default as SearchByFoodSection } from "../components/SearchByFood/index";
+export { default as SearchByFoodHeader } from "../components/SearchByFood/SearchByFoodHeader/SearchByFoodHeader";
+export { default as SearchByFoodMain } from "../components/SearchByFood/SearchByFoodMain/SearchByFoodMain";
+export { default as SearchByFoodItemsSection } from "../components/SearchByFood/SearchByFoodItemsSection/SearchByFoodItemsSection";
+export { default as SearchByFoodHeaderPagination } from "./SearchByFood/SearchByFoodHeader/SearchByFoodHeaderPagination/SearchByFoodHeaderPagination";
+export { default as ItemSearchByFood } from "./SearchByFood/SearchByFoodItemsSection/ItemSearchByFood/ItemSearchByFood";
+
+//Shared Components
+export { default as Text } from "../shared/Text/Text";
+export { default as Button } from "../shared/Button/Button";
+export { default as ArrowLeftButton } from "../shared/ArrowButtons/ArrowLeftButton";
+export { default as ArrowRightButton } from "../shared/ArrowButtons/ArrowRightButton";

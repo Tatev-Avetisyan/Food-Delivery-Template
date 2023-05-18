@@ -1,0 +1,9 @@
+@import "../../styles/variables/colors.module";
+
+.text {
+  font-weight: 700;
+  // font-size: 18px;
+  line-height: 112%;
+  text-align: center;
+  color: $titleBlackColor;
+}

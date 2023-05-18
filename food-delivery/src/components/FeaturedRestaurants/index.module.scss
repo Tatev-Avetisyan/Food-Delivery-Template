@@ -2,11 +2,11 @@
 
 .main {
   width: 100%;
-  height: 150vh;
+  height: 155vh;
   margin-top: 1%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   .title {
     @include title;
